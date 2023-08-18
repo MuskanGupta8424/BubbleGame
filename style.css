@@ -79,6 +79,7 @@ color: rgb(62, 88, 36);
 .elem{
 display: flex;    
 gap: 10px;
+align-items: center;
 }
 .elem>h2{
     font-size: 18px;
@@ -110,4 +111,27 @@ gap: 10px;
 .bubble:hover{
     cursor: pointer;
     background-color: rgb(62, 88, 36);
+}
+@media screen and (max-width:280px) {
+    #ptop{
+        gap:10px;
+
+    }
+    .elem{
+        align-items: center;
+    }
+    .elem>h2{
+        font-size: 12px;
+    }
+    .box{
+        padding: 0 6px;
+    }
+    #pbtm>h1{
+        font-size: 18px;
+    }
+}
+@media (min-width:280px) and (max-width:400px) {
+    #ptop{
+        gap: 20px;
+    }
 }
